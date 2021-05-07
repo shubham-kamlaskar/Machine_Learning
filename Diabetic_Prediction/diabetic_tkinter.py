@@ -10,7 +10,7 @@ root.geometry("290x250")
 root.resizable(False,False)
 
 def SubMit():
-    Glucose = pd.read_csv("c:/users/shubham/desktop/sublime/ml/pandas/Glucose.csv")
+    Glucose = pd.read_csv("Glucose.csv")
     X = Glucose.drop(columns=["Outcome"])
     y = Glucose["Outcome"]
     model = DecisionTreeClassifier()
